@@ -4,25 +4,13 @@ package day3
 class Day3 {
     fun run() {
 
-        val firstTestTreeCount = getInputDay3()
-            .inputAsLines()
-            .countTreesInLines(1)
+        val inputAsLines = getInputDay3().inputAsLines()
 
-        val secondTestTreeCount = getInputDay3()
-            .inputAsLines()
-            .countTreesInLines(3)
-
-        val thirdTestTreeCount = getInputDay3()
-            .inputAsLines()
-            .countTreesInLines(5)
-
-        val fourthTestTreeCount = getInputDay3()
-            .inputAsLines()
-            .countTreesInLines(7)
-
-        val fifthTestTreeCount = getInputDay3()
-            .inputAsLines()
-            .countTreesInLines(1, 2)
+        val firstTestTreeCount = inputAsLines.countTreesInLines(1)
+        val secondTestTreeCount = inputAsLines.countTreesInLines(3)
+        val thirdTestTreeCount = inputAsLines.countTreesInLines(5)
+        val fourthTestTreeCount = inputAsLines.countTreesInLines(7)
+        val fifthTestTreeCount = inputAsLines.countTreesInLines(1, 2)
 
         println(firstTestTreeCount * secondTestTreeCount * thirdTestTreeCount * fourthTestTreeCount * fifthTestTreeCount)
     }
